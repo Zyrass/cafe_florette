@@ -41,6 +41,11 @@ p {
   margin-bottom: 10px;
 }
 
+.my-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .separator {
   margin: 20px auto;
   height: 10px;
@@ -48,6 +53,18 @@ p {
   background-color: #111;
 }
 
+.container {
+  max-width: 1000px;
+  display: block;
+  margin: auto;
+}
+
+
+/**
+ * -----------------------------------------------------------------------------
+ * BUTTONS
+ * -----------------------------------------------------------------------------
+ */
 .btn {
   display: inline-block;
   font-size: 14px;
@@ -66,10 +83,15 @@ p {
   color: white;
 }
 
-.container {
-  max-width: 1000px;
-  display: block;
-  margin: auto;
+.btn-dark {
+  background-color: #222;
+  color: white;
+}
+
+.btn-dark:hover {
+  background-color: white;
+  color: #222;
+  border: 1px solid #222;
 }
 
 /**
@@ -119,7 +141,7 @@ p {
  */
 .vp {
   height: 700px;
-  background-image: url("https://dyma-images.s3.fr-par.scw.cloud/html-css/projects/project1/cafe1.jpg");
+  background-image: url(https://dyma-images.s3.fr-par.scw.cloud/html-css/projects/project1/cafe1.jpg);
   background-position: center center;
   background-size: cover;
   text-align: center;
@@ -161,4 +183,42 @@ p {
 .feature {
   float: left;
   width: 50%;
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * PERSON
+ * -----------------------------------------------------------------------------
+ */
+.person {
+  height: 400px;
+  background: url(https://dyma-images.s3.fr-par.scw.cloud/html-css/projects/project1/cafe3.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * RESERVATION
+ * -----------------------------------------------------------------------------
+ */
+.reservation {
+  padding: 100px 0px;
+  text-align: center;
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * FOOTER
+ * -----------------------------------------------------------------------------
+ */
+footer {
+  background-color: #222;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0;
 }
