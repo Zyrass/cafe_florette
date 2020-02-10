@@ -27,6 +27,46 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin-bottom: 10px;
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * CLASS GENERIQUE
+ * -----------------------------------------------------------------------------
+ */
+.my-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.separator {
+  margin: 20px auto;
+  height: 10px;
+  width: 100px;
+  background-color: #111;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 14px;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background-color: white;
+  color: #222;
+}
+
+.btn-primary:hover {
+  background-color: #222;
+  color: white;
+}
+
+
 /**
  * -----------------------------------------------------------------------------
  * HEADER
@@ -65,4 +105,34 @@ a {
 
 .header nav ul li a:hover, .active {
   background-color: #444;
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * VALUE PROPOSITION
+ * -----------------------------------------------------------------------------
+ */
+.vp {
+  height: 700px;
+  background-image: url("https://dyma-images.s3.fr-par.scw.cloud/html-css/projects/project1/cafe1.jpg");
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+}
+
+.vp-content {
+  max-width: 600px;
+  padding-top: 150px;
+  color: white;
+  margin: auto;
+}
+
+.vp-content h1 {
+  font-size: 50px;
+}
+
+.vp-content p {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  line-height: 1.9em;
 }
