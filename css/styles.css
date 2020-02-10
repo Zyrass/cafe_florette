@@ -59,6 +59,27 @@ p {
   margin: auto;
 }
 
+.underline {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.chip {
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  border-radius: 100%;
+  background-color: #333;
+  color: white;
+}
+
+.chip-purple {
+  background-color: #be418c;
+}
+
+.chip-brown {
+  background-color: #8c5e24;
+}
 
 /**
  * -----------------------------------------------------------------------------
@@ -205,6 +226,29 @@ p {
 .reservation {
   padding: 100px 0px;
   text-align: center;
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * PAGE WHERE.HTML
+ * -----------------------------------------------------------------------------
+ */
+.where {
+  padding: 180px 0 0 0;
+  overflow: auto;
+  min-height: 100vh;
+}
+
+.where-img {
+  float: left;
+  width: 45%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.where-text {
+  float: right;
+  width: 50%;
 }
 
 /**
