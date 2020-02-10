@@ -1,3 +1,8 @@
+
+p {
+    padding: 0 20px;
+}
+
 /**
  * -----------------------------------------------------------------------------
  * HEADER
@@ -29,7 +34,7 @@
  * -----------------------------------------------------------------------------
  */
 .vp-content {
-  padding-top: 50px;
+  padding-top: 120px;
 }
 
 .vp-content h1 {
@@ -46,6 +51,12 @@
   width: 100%;
   margin-bottom: 2rem;
 }
+.feature:nth-child(1) {
+  padding: 0 20px;
+}
+.feature:nth-child(2) {
+  padding: 0 20px;
+}
 
 /**
  * -----------------------------------------------------------------------------
@@ -60,7 +71,7 @@
 
 .where-img {
   float: none;
-  width: 80%;
+  width: 100%;
   border: none;
   margin: auto;
   margin-bottom: 3rem;

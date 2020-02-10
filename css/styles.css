@@ -1,6 +1,6 @@
 /**
  * -----------------------------------------------------------------------------
-* RESET
+ * RESET
  * -----------------------------------------------------------------------------
  */
 * {
@@ -9,8 +9,17 @@
   box-sizing: border-box;
 }
 
-html, body {
-  font-family: "Open Sans", sans-serif;
+/**
+ * -----------------------------------------------------------------------------
+ * VARIABLES
+ * -----------------------------------------------------------------------------
+ */
+:root {
+  --color_noir_foncer: #000;
+  --color_noir: #333;
+  --color_gris: #555;
+  --color_blanc_moins_clair: #ddd;
+  --color_blanc: #fff;
 }
 
 /**
@@ -18,17 +27,22 @@ html, body {
  * TAG GENERAL
  * -----------------------------------------------------------------------------
  */
+html, body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--color_noir);
+}
+
 h1, h2, h3 {
-  margin: bottom;
+  margin-bottom: 20px;
 }
 
 a {
-  color: #222;
+  color: var(--color_noir);
   text-decoration: none;
 }
 
 p {
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 /**
@@ -47,21 +61,21 @@ p {
 }
 
 .separator {
-  margin: 20px auto;
-  height: 10px;
-  width: 100px;
-  background-color: #111;
+  margin: 30px auto;
+  height: 4px;
+  max-width: 300px;
+  background-color: var(--color_noir);
 }
 
 .container {
   max-width: 1000px;
   display: block;
-  margin: auto;
+  margin: 20px auto;
 }
 
 .underline {
   padding-bottom: 10px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--color_blanc_moins_clair);
 }
 
 .chip {
@@ -69,8 +83,9 @@ p {
   text-align: center;
   width: 30px;
   border-radius: 100%;
-  background-color: #333;
-  color: white;
+  background-color: var(--color_noir);
+  color: var(--color_blanc);
+
 }
 
 .chip-purple {
@@ -95,24 +110,24 @@ p {
 }
 
 .btn-primary {
-  background-color: white;
-  color: #222;
+  background-color: var(--color_blanc);
+  color: var(--color_noir);;
 }
 
 .btn-primary:hover {
-  background-color: #222;
-  color: white;
+  background-color: var(--color_noir);;
+  color: var(--color_blanc);
 }
 
 .btn-dark {
-  background-color: #222;
-  color: white;
+  background-color: var(--color_noir);;
+  color: var(--color_blanc);
 }
 
 .btn-dark:hover {
-  background-color: white;
-  color: #222;
-  border: 1px solid #222;
+  background-color: var(--color_blanc);
+  color: var(--color_noir);;
+  border: 1px solid var(--color_noir);;
 }
 
 /**
@@ -121,7 +136,7 @@ p {
  * -----------------------------------------------------------------------------
  */
 .header {
-  background: black;
+  background: var(--color_noir_foncer);;
   overflow: auto;
   line-height: 1.7em;
 }
@@ -133,7 +148,7 @@ p {
 }
 
 .header nav h1 a {
-  color: white;
+  color: var(--color_blanc);
 }
 
 .header nav ul {
@@ -146,13 +161,13 @@ p {
 }
 
 .header nav ul li a {
-  color: white;
+  color: var(--color_blanc);
   padding: 20px;
   display: block;
 }
 
 .header nav ul li a:hover, .active {
-  background-color: #444;
+  background-color: var(--color_gris);;
 }
 
 /**
@@ -162,16 +177,17 @@ p {
  */
 .vp {
   height: 700px;
-  background-image: url(https://dyma-images.s3.fr-par.scw.cloud/html-css/projects/project1/cafe1.jpg);
-  background-position: center center;
+  background-image: url(../img/cafe1.jpg);
+  background-position-x: center;
+  background-position-y: center;
   background-size: cover;
   text-align: center;
 }
 
 .vp-content {
   max-width: 600px;
-  padding-top: 150px;
-  color: white;
+  padding-top: 90px;
+  color: var(--color_blanc);
   margin: auto;
 }
 
@@ -183,6 +199,7 @@ p {
   font-size: 18px;
   letter-spacing: 0.5px;
   line-height: 1.9em;
+  margin-bottom: 40px;
 }
 
 /**
@@ -205,6 +222,12 @@ p {
   float: left;
   width: 50%;
 }
+.feature:nth-child(1) {
+  padding-right: 60px;
+}
+.feature:nth-child(2) {
+  padding-left: 60px;
+}
 
 /**
  * -----------------------------------------------------------------------------
@@ -212,9 +235,11 @@ p {
  * -----------------------------------------------------------------------------
  */
 .person {
+  clear: both;
   height: 400px;
-  background: url(https://dyma-images.s3.fr-par.scw.cloud/html-css/projects/project1/cafe3.jpg);
-  background-position: center center;
+  background: url(../img/cafe4.jpg);
+  background-position-x: left;
+  background-position-y: bottom;
   background-size: cover;
 }
 
@@ -234,15 +259,14 @@ p {
  * -----------------------------------------------------------------------------
  */
 .where {
-  padding: 180px 0 0 0;
-  overflow: auto;
+  padding: 200px 0 0 0;
   min-height: 100vh;
 }
 
 .where-img {
   float: left;
   width: 45%;
-  border: 1px solid #ddd;
+  border: 1px solid var(--color_blanc_moins_clair);
   border-radius: 5px;
 }
 
@@ -257,7 +281,7 @@ p {
  * -----------------------------------------------------------------------------
  */
 .contact {
-  padding: 180px 0 10px 0;
+  margin: 75px 0 25px 0;
   min-height: 100vh;
 }
 
@@ -275,12 +299,26 @@ p {
   display: block;
   width: 100%;
   padding: 15px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--color_blanc_moins_clair);
   border-radius: 3px;
 }
 
 .contact-form-container form textarea {
   min-height: 80px;
+}
+
+::placeholder {
+  text-align: center;
+  color: var(--color_gris);
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+input:focus, textarea:focus {  
+  box-shadow: 0px 0px 5px var(--color_gris);
+  outline: none;
 }
 
 /**
@@ -289,8 +327,8 @@ p {
  * -----------------------------------------------------------------------------
  */
 footer {
-  background-color: #222;
-  color: white;
+  background-color: var(--color_noir);;
+  color: var(--color_blanc);
   padding: 30px 0;
   text-align: center;
 }
